@@ -1,4 +1,4 @@
-<!-- Navbar -->
+
 <nav v-on:mouseleave="highlightActiveItem" v-bind:style="{ height: windowHeight + 'px' }" v-bind:class="{ 'navbar--active': isActive }" class="navbar">
     <div class="navbar__container container">
         <div class="navbar__header">
@@ -12,9 +12,10 @@
                 <span class="hamburger__bar"></span>
                 <span class="hamburger__bar hamburger__bar--second"></span>
             </button>
-            <a class="monese-logo" href="/">
-
-             
+            <a class="monese-logo" href="index.html">
+                <svg class="monese-logo__icon">
+                    <use xlink:href="#icon-logo" />
+                </svg> 
                 <svg class="monese-logo__text">
                     <use xlink:href="#icon-logo-text" />
                 </svg>
@@ -46,7 +47,7 @@
 
                     <ul class="sublanguage__ul sublanguage__ul--region">
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="gb/bg/index.html%3Fl=c.html">
+                            <a class="sublanguage__a" href="https://monese.com/gb/bg/contact?l=c">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagbg" />
                                 </svg>
@@ -54,7 +55,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="gb/de/index.html%3Fl=c.html">
+                            <a class="sublanguage__a" href="https://monese.com/gb/de/contact?l=c">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagde" />
                                 </svg>
@@ -64,7 +65,7 @@
                         <li class="sublanguage__li">
 
                                                                                                                     
-                            <a class="sublanguage__a" href="index.html%3Fl=c.html">
+                            <a class="sublanguage__a" href="https://monese.com/contact?l=c">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagen" />
                                 </svg>
@@ -72,7 +73,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="gb/es/index.html%3Fl=c.html">
+                            <a class="sublanguage__a" href="https://monese.com/gb/es/contact?l=c">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flages" />
                                 </svg>
@@ -80,7 +81,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="gb/fr/index.html%3Fl=c.html">
+                            <a class="sublanguage__a" href="https://monese.com/gb/fr/contact?l=c">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagfr" />
                                 </svg>
@@ -88,7 +89,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="gb/it/index.html%3Fl=c.html">
+                            <a class="sublanguage__a" href="https://monese.com/gb/it/contact?l=c">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagit" />
                                 </svg>
@@ -96,7 +97,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="gb/pt_br/index%3Fl=c.html">
+                            <a class="sublanguage__a" href="https://monese.com/gb/pt_br/contact?l=c">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagpt_br" />
                                 </svg>
@@ -104,7 +105,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="gb/ro/%3Fl=c.html">
+                            <a class="sublanguage__a" href="https://monese.com/gb/ro/contact?l=c">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagro" />
                                 </svg>
@@ -116,7 +117,7 @@
                 <div class="sublanguage--region">
 
                                                                                     
-                    <a class="sublanguage__selection" href="/eu/index">
+                    <a class="sublanguage__selection" href="https://monese.com/eu/contact">
                         <span class="sublanguage__selection--flag">
                             <svg class="language__flag language__flag--left">
                                 <use xlink:href="#icon-flageu" />
@@ -130,7 +131,7 @@
                     </a>
 
                                                                                     
-                    <a v-on:click="switchRegion('gb');" class="sublanguage__selection sublanguage__selection--last sublanguage__selection--active" href="index.html">
+                    <a v-on:click="switchRegion('gb');" class="sublanguage__selection sublanguage__selection--last sublanguage__selection--active" href="contact.html">
                         <span class="sublanguage__selection--flag">
                             <svg class="language__flag language__flag--left">
                                 <use xlink:href="#icon-flagen" />
@@ -166,7 +167,7 @@
                     </a>
                 </li>
                 <li class="subnavbar__li">
-                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="travel-money-card/">
+                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="travel-money-card.html">
                         Travel
                         <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
                             <use xlink:href="#icon-arrow" />
@@ -174,7 +175,7 @@
                     </a>
                 </li>
                 <li class="subnavbar__li">
-                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/pricing">
+                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="pricing.html">
                         Pricing
                         <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
                             <use xlink:href="#icon-arrow" />
@@ -208,7 +209,7 @@
             </ul>
 
             <div class="subnavbar__li--cta">
-                <a class="btn subnavbar__btn btn--one" href="/free-trial-account">Sign up now
+                <a class="btn subnavbar__btn btn--one" href="free-trial-account.html">Sign up now
                     <svg class="btn__arrow arrow">
                         <use xlink:href="#icon-arrow" />
                     </svg>
@@ -223,7 +224,7 @@
 
                     <ul class="sublanguage__ul sublanguage__ul--region">
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/bg/index.html">
+                            <a class="sublanguage__a" href="gb/bg/contact.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagbg" />
                                 </svg>
@@ -231,7 +232,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/de/index">
+                            <a class="sublanguage__a" href="gb/de/contact.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagde" />
                                 </svg>
@@ -241,7 +242,7 @@
                         <li class="sublanguage__li">
 
                                                                                                                     
-                            <a class="sublanguage__a" href="index.html">
+                            <a class="sublanguage__a" href="contact.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagen" />
                                 </svg>
@@ -249,7 +250,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/es/index">
+                            <a class="sublanguage__a" href="gb/es/contact.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flages" />
                                 </svg>
@@ -257,7 +258,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/fr/index.html">
+                            <a class="sublanguage__a" href="gb/fr/contact.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagfr" />
                                 </svg>
@@ -265,7 +266,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/it/index">
+                            <a class="sublanguage__a" href="gb/it/contact.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagit" />
                                 </svg>
@@ -273,7 +274,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="gb/pt_br/index">
+                            <a class="sublanguage__a" href="gb/pt_br/contact.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagpt_br" />
                                 </svg>
@@ -281,7 +282,7 @@
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="gb/ro/index">
+                            <a class="sublanguage__a" href="gb/ro/contact.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagro" />
                                 </svg>
@@ -297,7 +298,7 @@
                 <div class="sublanguage--region">
 
                                                                                     
-                    <a class="sublanguage__selection" href="eu/index">
+                    <a class="sublanguage__selection" href="https://monese.com/eu/contact">
                         <span class="sublanguage__selection--flag">
                             <svg class="language__flag language__flag--left">
                                 <use xlink:href="#icon-flageu" />
@@ -311,7 +312,7 @@
                     </a>
 
                                                                                     
-                    <a v-on:click="switchRegion('gb');" class="sublanguage__selection sublanguage__selection--last sublanguage__selection--active" href="index.html">
+                    <a v-on:click="switchRegion('gb');" class="sublanguage__selection sublanguage__selection--last sublanguage__selection--active" href="contact.html">
                         <span class="sublanguage__selection--flag">
                             <svg class="language__flag language__flag--left">
                                 <use xlink:href="#icon-flagen" />
@@ -332,7 +333,7 @@
     
     
 <div v-bind:class="{ 'overmenu--active': isOverTransferActive }" class="overmenu overmenu--transfers">
-    <a v-on:click="closeOverMenus" href="/#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="contact.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -350,19 +351,19 @@
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/transfer-money-to-hungary">
+                    <a class="sublanguage__a" href="international-money-transfer/transfer-money-to-hungary.html">
                         <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.monese.com/s/flags-2/flag_hungary_17dp.svg">
                         Hungary
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/transfer-money-to-italy">
+                    <a class="sublanguage__a" href="international-money-transfer/transfer-money-to-italy.html">
                         <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.monese.com/s/flags-2/flag_italy_17dp.svg">
                         Italy
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/transfer-money-to-romania">
+                    <a class="sublanguage__a" href="international-money-transfer/transfer-money-to-romania.html">
                         <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.monese.com/s/flags-2/flag_romania_17dp.svg">
                         Romania
                     </a>
@@ -374,14 +375,14 @@
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/transfer-money-to-spain">
-                        <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.elektropay.com/s/flags-2/flag_spain_17dp.svg">
+                    <a class="sublanguage__a" href="international-money-transfer/transfer-money-to-spain.html">
+                        <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.monese.com/s/flags-2/flag_spain_17dp.svg">
                         Spain
                     </a>
                 </li>
             </ul>
 
-            <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/international-money-transfer#countries">
+            <a class="subnavbar__item overmenu__item overmenu__item--features"  href="international-money-transfer.html#countries">
                 <svg class="overmenu__svg">
                     <use xlink:href="#icon-nworld" />
                 </svg>
@@ -399,27 +400,27 @@
         
             <ul class="sublanguage__ul overmenu__ul--transfers">
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-eur">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-eur.html">
                         <span class="overmenu__span--currency">&#8364;</span> EUR
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-usd">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-usd.html">
                         <span class="overmenu__span--currency">&#36;</span> USD
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-bgn">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-bgn.html">
                         <span class="overmenu__span--currency">&#1083;&#1074;</span> BGN
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-ron">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-ron.html">
                         <span class="overmenu__span--currency">&#108;&#101;&#105;</span> RON
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-pln">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-pln.html">
                         <span class="overmenu__span--currency">&#122;&#322;</span> PLN
                     </a>
                 </li>
@@ -427,7 +428,7 @@
 
                 </div>
 
-        <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/international-money-transfer#currencies">
+        <a class="subnavbar__item overmenu__item overmenu__item--features"  href="international-money-transfer.html#currencies">
             <svg class="overmenu__svg">
                 <use xlink:href="#icon-ncurrencies" />
             </svg>
@@ -442,7 +443,7 @@
 </div>
     
 <div v-bind:class="{ 'overmenu--active': isOverFeaturesActive }" class="overmenu overmenu--features">
-    <a v-on:click="closeOverMenus" href="#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="contact.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -451,7 +452,7 @@
     <div class="overmenu__list overmenu__list--features">
         <ul class="overmenu__ul">
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/instant-account">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/instant-account.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-naccount" />
                     </svg>
@@ -463,7 +464,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/debit-card">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/debit-card.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-ncard" />
                     </svg>
@@ -475,7 +476,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/budgeting">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/budgeting.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-nbudgeting" />
                     </svg>
@@ -487,7 +488,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/deposits/">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/deposits.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-ndeposits" />
                     </svg>
@@ -499,7 +500,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/payments">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/payments.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-npayments" />
                     </svg>
@@ -511,7 +512,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/security">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/security.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-nsecurity" />
                     </svg>
@@ -526,7 +527,7 @@
     </div>
 </div>    
 <div v-bind:class="{ 'overmenu--active': isOverHelpActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="contact.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -535,7 +536,7 @@
     <div class="overmenu__list overmenu__list--help">
         <ul class="overmenu__ul overmenu__ul--help">
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb">
                     FAQs
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -543,7 +544,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387109-Monese">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387109-Monese">
                     General
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -551,7 +552,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387129-Account">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387129-Account">
                     Accounts
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -559,7 +560,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387149-Deposits">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387149-Deposits">
                     Deposits
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -567,7 +568,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000394165-Payments">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000394165-Payments">
                     Payments
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -575,7 +576,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000394185-Card">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000394185-Card">
                     Card
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -583,7 +584,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387169-Pricing">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387169-Pricing">
                     Pricing
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -591,7 +592,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387189-Security">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387189-Security">
                 Security
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -602,7 +603,7 @@
     </div>
 </div>    
 <div v-bind:class="{ 'overmenu--active': isOverCompanyActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="/#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="contact.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -612,7 +613,7 @@
         <ul class="overmenu__ul">
 
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/about">
+                <a class="subnavbar__item overmenu__item"  href="about.html">
                     About
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -620,7 +621,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="https://status.elektropay.com">
+                <a class="subnavbar__item overmenu__item"  href="https://monese.statuspage.io">
                     Service Status
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -628,7 +629,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="https://elektropay.workable.com">
+                <a class="subnavbar__item overmenu__item"  href="https://monese.workable.com">
                     Careers
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -644,7 +645,7 @@
                 </a>
             </li>
                         <li>
-                <a class="subnavbar__item overmenu__item"  href="/media">
+                <a class="subnavbar__item overmenu__item"  href="media.html">
                     Media
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -652,7 +653,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/terms">
+                <a class="subnavbar__item overmenu__item"  href="terms.html">
                     Terms
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -660,7 +661,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/privacy">
+                <a class="subnavbar__item overmenu__item"  href="privacy.html">
                      Privacy
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -668,7 +669,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/cookies">
+                <a class="subnavbar__item overmenu__item"  href="cookies.html">
                     Cookies
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -679,7 +680,7 @@
     </div>
 </div>    
 <div v-bind:class="{ 'overmenu--active': isOverCustomersActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="/#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="contact.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -688,7 +689,7 @@
     <div class="overmenu__list">
         <ul class="overmenu__ul">
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers">
+                <a class="subnavbar__item overmenu__item"  href="customers.html">
                     All customers
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -696,7 +697,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/expats">
+                <a class="subnavbar__item overmenu__item"  href="customers/expats.html">
                     Expats
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -704,7 +705,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/freelancers">
+                <a class="subnavbar__item overmenu__item"  href="customers/freelancers.html">
                     Freelancers
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -712,7 +713,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/foreign-nationals.html">
+                <a class="subnavbar__item overmenu__item"  href="customers/foreign-nationals.html">
                     Foreign Nationals
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -720,7 +721,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/basic-account">
+                <a class="subnavbar__item overmenu__item"  href="customers/basic-account.html">
                     Basic Account
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -728,7 +729,7 @@
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/no-proof-of-address">
+                <a class="subnavbar__item overmenu__item"  href="customers/no-proof-of-address.html">
                     No proof of address
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -742,32 +743,31 @@
     <div class="desktopsub__col desktopsub__col--first">
         <h3 class="desktopsub__h3">Company</h3>
         <ul class="desktopsub__ul desktopsub__ul--sub">
-            <li><a class="desktopsub__a" href="/about">About</a></li>
-            <li><a class="desktopsub__a" href="https://status.elektropay.com">Service Status</a></li>
-            <li><a class="desktopsub__a" href="https://elektropay.workable.com">Careers</a></li>
-            <li><a class="desktopsub__a" href="/blog">Blog</a></li>
-            <li><a class="desktopsub__a" href="/contact">Contact</a></li>
-            <li><a class="desktopsub__a" href="/media">Media</a></li>
-            <li><a class="desktopsub__a" href="/terms">Terms</a></li>
-            <li><a class="desktopsub__a" href="/privacy">Privacy</a></li>
-            <li><a class="desktopsub__a" href="/cookies">Cookies</a></li>
+            <li><a class="desktopsub__a" href="about.html">About</a></li>
+            <li><a class="desktopsub__a" href="https://monese.statuspage.io">Service Status</a></li>
+            <li><a class="desktopsub__a" href="https://monese.workable.com">Careers</a></li>
+                            <li><a class="desktopsub__a" href="blog.html">Blog</a></li>
+                        <li><a class="desktopsub__a" href="contact.html">Contact</a></li>
+            <li><a class="desktopsub__a" href="media.html">Media</a></li>
+            <li><a class="desktopsub__a" href="terms.html">Terms</a></li>
+            <li><a class="desktopsub__a" href="privacy.html">Privacy</a></li>
+            <li><a class="desktopsub__a" href="cookies.html">Cookies</a></li>
         </ul>
     </div>
     <div class="desktopsub__col">
         <h3 class="desktopsub__h3">Customers</h3>
         <ul class="desktopsub__ul desktopsub__ul--sub">
-            <li><a class="desktopsub__a" href="/travel-money-card">Travel</a></li>
-            <li><a class="desktopsub__a" href="/pricing">Pricing</a></li>
-            <li><a class="desktopsub__a" href="/customers/basic-account">Basic Account</a></li>
-            <li><a class="desktopsub__a" href="https://support.elektropay.com/hc/en-gb">Help</a></li>
-            <li><a class="desktopsub__a" href="/customers">All customers</a></li>
-            <li><a class="desktopsub__a" href="/customers/expats">Expats</a></li>
-            <li><a class="desktopsub__a" href="/customers/freelancers">Freelancers</a></li>
-            <li><a class="desktopsub__a" href="/customers/foreign-nationals">Foreign Nationals</a></li>
-            <li><a class="desktopsub__a" href="/customers/no-proof-of-address">No proof of address</a></li>
+            <li><a class="desktopsub__a" href="travel-money-card.html">Travel</a></li>
+            <li><a class="desktopsub__a" href="pricing.html">Pricing</a></li>
+            <li><a class="desktopsub__a" href="customers/basic-account.html">Basic Account</a></li>
+            <li><a class="desktopsub__a" href="https://support.monese.com/hc/en-gb">Help</a></li>
+            <li><a class="desktopsub__a" href="customers.html">All customers</a></li>
+            <li><a class="desktopsub__a" href="customers/expats.html">Expats</a></li>
+            <li><a class="desktopsub__a" href="customers/freelancers.html">Freelancers</a></li>
+            <li><a class="desktopsub__a" href="customers/foreign-nationals.html">Foreign Nationals</a></li>
+            <li><a class="desktopsub__a" href="customers/no-proof-of-address.html">No proof of address</a></li>
         </ul>
     </div>
 </div>
     <div v-bind:style="{ left: highlightLeft + 'px', width: highlightWidth + 'px' }" v-bind:class="{ 'navbar__highlight--active': highlightActive }" class="navbar__highlight"></div>
-</nav>   
-
+</nav>
