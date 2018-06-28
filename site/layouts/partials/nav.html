@@ -170,7 +170,16 @@
                             <use xlink:href="#icon-arrow" />
                         </svg>
                     </a>
-                </li>               
+                </li>  
+                
+                 <li class="subnavbar__li">
+                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="https://developers.elektropay.com">
+                       Developers
+                        <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
+                            <use xlink:href="#icon-arrow" />
+                        </svg>
+                    </a>
+                </li> 
                 
               <li v-bind:class="{ 'subnavbar__li--active': isOverCompanyActive }" class="subnavbar__li">
                     <a v-bind:class="{ 'subnavbar__item--tactive': isOverCompanyActive }" v-on:click="openOverMenus('company', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/about.html">
@@ -664,8 +673,8 @@
     </div>
 </div>    
 
-<div v-bind:class="{ 'overmenu--active': isOverCustomersActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="contact.html#" class="overmenu__header">
+<div v-bind:class="{ 'overmenu--active': isOverCustomersActive }" class="overmenu overmenu--customers">
+    <a v-on:click="closeOverMenus" href="/contact.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
