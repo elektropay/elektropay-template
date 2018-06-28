@@ -18,6 +18,25 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-TBX59C');</script>
 
+	<script src="/main-ce0aec80fc.min.js" async></script>
+    
+<noscript id="deferred-styles">
+<link rel="stylesheet" href="/css/app.min.css"/>
+</noscript>
+            <script>
+              var loadDeferredStyles = function() {
+                var addStylesNode = document.getElementById("deferred-styles");
+                var replacement = document.createElement("div");
+                replacement.innerHTML = addStylesNode.textContent;
+                document.body.appendChild(replacement)
+                addStylesNode.parentElement.removeChild(addStylesNode);
+              };
+              var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                  webkitRequestAnimationFrame || msRequestAnimationFrame;
+              if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+              else window.addEventListener('load', loadDeferredStyles);
+            </script>
+
 <link rel="canonical" href="/" />
 	
 		<title>{{ .Title }} | Elektropay</title>
