@@ -35,11 +35,11 @@
                     <use xlink:href="#icon-arrow" />
                 </svg>
             </button>
-           
+
+<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="/free-trial-account.html">Sign up now</a>          
+            
 <a v-on:click="trackHeaderCTA" v-bind:class="{ 'login-now--active': showCta }" class="btn btn--ghost login-now" href="https://app.elektropay.com/user/login">Dashboard</a>
-           
-<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="/free-trial-account.html">Sign up now</a>
-       
+                 
         </div>
         
         <div v-bind:style="{ height: regionHeight + 'px' }" class="sublanguage sublanguage--header sublanguage--region" v-bind:class="{ 'sublanguage--extended': isRegionActive }">
