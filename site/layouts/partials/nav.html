@@ -171,15 +171,6 @@
                         </svg>
                     </a>
                 </li>               
-
-                <li class="subnavbar__li">
-                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="https://developers.elektropay.com">
-                       Developers
-                        <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
-                            <use xlink:href="#icon-arrow" />
-                        </svg>
-                    </a>
-                </li>              
                 
               <li v-bind:class="{ 'subnavbar__li--active': isOverCompanyActive }" class="subnavbar__li">
                     <a v-bind:class="{ 'subnavbar__item--tactive': isOverCompanyActive }" v-on:click="openOverMenus('company', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/about.html">
@@ -200,15 +191,6 @@
                 </li>
             </ul>
             
-        
-            <div class="subnavbar__li--cta__scroll">
-                <a class="btn subnavbar__btn btn--ghost" href="https://app.elektropay.com/user/login">Dashboard
-                    <svg class="btn__arrow arrow">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </div>
-
             <div class="subnavbar__li--cta">
                 <a class="btn subnavbar__btn btn--one" href="/free-trial-account.html">Sign up now
                     <svg class="btn__arrow arrow">
@@ -527,82 +509,7 @@
         </ul>
     </div>
 </div>    
-<div v-bind:class="{ 'overmenu--active': isOverHelpActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="/contact.html#" class="overmenu__header">
-        <svg class="arrow overmenu__arrow">
-            <use xlink:href="#icon-arrow" />
-        </svg>
-        <h2 class="overmenu__h2">Help</h2>
-    </a>
-    <div class="overmenu__list overmenu__list--help">
-        <ul class="overmenu__ul overmenu__ul--help">
-            <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb">
-                    FAQs
-                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387109-Monese">
-                    General
-                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387129-Account">
-                    Accounts
-                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387149-Deposits">
-                    Deposits
-                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000394165-Payments">
-                    Payments
-                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000394185-Card">
-                    Card
-                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387169-Pricing">
-                    Pricing
-                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387189-Security">
-                Security
-                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>    
+    
 <div v-bind:class="{ 'overmenu--active': isOverCompanyActive }" class="overmenu overmenu--company">
     <a v-on:click="closeOverMenus" href="/contact.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
@@ -679,7 +586,84 @@
             </li>
         </ul>
     </div>
+</div>       
+<div v-bind:class="{ 'overmenu--active': isOverHelpActive }" class="overmenu overmenu--help">
+    <a v-on:click="closeOverMenus" href="/contact.html#" class="overmenu__header">
+        <svg class="arrow overmenu__arrow">
+            <use xlink:href="#icon-arrow" />
+        </svg>
+        <h2 class="overmenu__h2">Resources</h2>
+    </a>
+    <div class="overmenu__list overmenu__list--help">
+        <ul class="overmenu__ul overmenu__ul--help">
+            <li>
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb">
+                    FAQs
+                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
+                        <use xlink:href="#icon-arrow" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387109-Monese">
+                    General
+                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
+                        <use xlink:href="#icon-arrow" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387129-Account">
+                    Accounts
+                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
+                        <use xlink:href="#icon-arrow" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387149-Deposits">
+                    Deposits
+                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
+                        <use xlink:href="#icon-arrow" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000394165-Payments">
+                    Payments
+                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
+                        <use xlink:href="#icon-arrow" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000394185-Card">
+                    Card
+                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
+                        <use xlink:href="#icon-arrow" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387169-Pricing">
+                    Pricing
+                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
+                        <use xlink:href="#icon-arrow" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387189-Security">
+                Security
+                    <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
+                        <use xlink:href="#icon-arrow" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>    
+
 <div v-bind:class="{ 'overmenu--active': isOverCustomersActive }" class="overmenu overmenu--help">
     <a v-on:click="closeOverMenus" href="contact.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
