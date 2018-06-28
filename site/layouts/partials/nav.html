@@ -160,21 +160,23 @@
                 </li>
 
                 <li class="subnavbar__li">
-                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="//developers.elektropay.com">
-                       Developers
-                        <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
-                            <use xlink:href="#icon-arrow" />
-                        </svg>
-                    </a>
-                </li>
-                <li class="subnavbar__li">
                     <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/pricing.html">
                         Pricing
                         <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
                             <use xlink:href="#icon-arrow" />
                         </svg>
                     </a>
-                </li>
+                </li>               
+
+                <li class="subnavbar__li">
+                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="//developers.elektropay.com">
+                       Developers
+                        <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
+                            <use xlink:href="#icon-arrow" />
+                        </svg>
+                    </a>
+                </li>              
+                
                  <li v-bind:class="{ 'subnavbar__li--active': isOverTransferActive }" class="subnavbar__li">
                     <a v-bind:class="{ 'subnavbar__item--tactive': isOverTransferActive }" v-on:click="openOverMenus('transfer', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/international-money-transfer.html">
                         Company
@@ -744,11 +746,11 @@
     <div class="desktopsub__col desktopsub__col--first">
         <h3 class="desktopsub__h3">Company</h3>
         <ul class="desktopsub__ul desktopsub__ul--sub">
-            <li><a class="desktopsub__a" href="about.html">About</a></li>
+            <li><a class="desktopsub__a" href="/about.html">About</a></li>
             <li><a class="desktopsub__a" href="https://elektropay.statuspage.io">Service Status</a></li>
             <li><a class="desktopsub__a" href="https://monese.workable.com">Careers</a></li>
-                            <li><a class="desktopsub__a" href="blog.html">Blog</a></li>
-                        <li><a class="desktopsub__a" href="/contact.html">Contact</a></li>
+            <li><a class="desktopsub__a" href="/bloghtml">Blog</a></li>
+             <li><a class="desktopsub__a" href="/contact.html">Contact</a></li>
             <li><a class="desktopsub__a" href="/media.html">Media</a></li>
             <li><a class="desktopsub__a" href="/terms.html">Terms</a></li>
             <li><a class="desktopsub__a" href="/privacy.html">Privacy</a></li>
