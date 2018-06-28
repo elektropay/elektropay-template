@@ -1,5 +1,5 @@
 +++
 title = "Payments"
 type = "payments"
-page="/features/payments.html"
+page="features/payments.html"
 +++
