@@ -6,7 +6,7 @@
 <h1 class="pvm plm">{{.title}}</h1>
 
   <div class="mobile-off">
-<form novalidate="novalidate" class="pill-form mts" action="https://app.elektropay.com/signup" accept-charset="UTF-8" method="post">
+<form novalidate="novalidate" class="pill-form mts" action="https://app.elektropay.com/user/signup" accept-charset="UTF-8" method="post">
   <input name="utf8" type="hidden" value="✓">
   <input type="hidden" name="authenticity_token" value="xIjd2P7O4ZTqq8hztZjH60INAsBDjzRnO5DKK+ouRHCn0SHXtmSH9r28foX33MG6wd/ZgxI3/gOBOOYl8Wbf5Q==">
 <input type="hidden" name="section" id="section" value="hero">
@@ -15,7 +15,7 @@
 </form>
     
 {{ if .subtitle }}
-<p class="text-center pvs">Get started for free. No credit card required{{ .subtitle }}</p>
+<p class="text-center pvs">{{ .subtitle }}</p>
 {{ end }}      
 </div>
   
