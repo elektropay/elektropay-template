@@ -29,16 +29,19 @@
                 </span>
                 <span class="region__text">
                                             UK
-                    
-                                        <span class="region__span">(EN)</span>
+               <span class="region__span">(EN)</span>
                                     </span>
                 <svg v-bind:class="{ 'language__arrow--active': isRegionActive }" class="language__arrow btn__arrow arrow language__arrow--region">
                     <use xlink:href="#icon-arrow" />
                 </svg>
             </button>
-
-            <a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="free-trial-account.html">Sign up now</a>
+           
+<a v-on:click="trackHeaderCTA" v-bind:class="{ 'login-now--active': showCta }" class="btn btn--one login-now" href="https://app.elektropay.com/user/login">Dashboard</a>
+           
+<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="/free-trial-account.html">Sign up now</a>
+       
         </div>
+        
         <div v-bind:style="{ height: regionHeight + 'px' }" class="sublanguage sublanguage--header sublanguage--region" v-bind:class="{ 'sublanguage--extended': isRegionActive }">
             <div class="sublanguage__scroll">
 
@@ -117,7 +120,7 @@
                 <div class="sublanguage--region">
 
                                                                                     
-                    <a class="sublanguage__selection" href="https://monese.com/eu/contact">
+                    <a class="sublanguage__selection" href="https://elektropay.com/eu/contact">
                         <span class="sublanguage__selection--flag">
                             <svg class="language__flag language__flag--left">
                                 <use xlink:href="#icon-flageu" />
@@ -205,8 +208,9 @@
                 </li>
             </ul>
             
-              <div class="subnavbar__li--login__scroll">
-                <a class="btn subnavbar__btn" href="https://app.elektropay.com">Dashboard
+        
+            <div class="subnavbar__li--cta__scroll">
+                <a class="btn subnavbar__btn btn--one" href="https://app.elektropay.com/user/login">Dashboard
                     <svg class="btn__arrow arrow">
                         <use xlink:href="#icon-arrow" />
                     </svg>
