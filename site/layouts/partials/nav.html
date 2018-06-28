@@ -152,23 +152,16 @@
             <ul v-bind:class="{ 'subnavbar__nav--dropdown': dropdownIsActive }" class="subnavbar__ul">
                 <li v-bind:class="{ 'subnavbar__li--active': isOverFeaturesActive }" class="subnavbar__li">
                     <a v-bind:class="{ 'subnavbar__item--tactive': isOverFeaturesActive }" v-on:click="openOverMenus('features', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/features.html">
-                        Features
+                        Platform
                         <svg v-bind:class="{ 'subnavbar__arrow--tactive': isOverFeaturesActive }" class="arrow subnavbar__arrow">
                             <use xlink:href="#icon-arrow" />
                         </svg>
                     </a>
                 </li>
-                <li v-bind:class="{ 'subnavbar__li--active': isOverTransferActive }" class="subnavbar__li">
-                    <a v-bind:class="{ 'subnavbar__item--tactive': isOverTransferActive }" v-on:click="openOverMenus('transfer', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/international-money-transfer.html">
-                        Transfers
-                        <svg v-bind:class="{ 'subnavbar__arrow--tactive': isOverTransferActive }" class="arrow subnavbar__arrow">
-                            <use xlink:href="#icon-arrow" />
-                        </svg>
-                    </a>
-                </li>
+
                 <li class="subnavbar__li">
-                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/travel-money-card.html">
-                        Travel
+                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="//developers.elektropay.com">
+                       Developers
                         <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
                             <use xlink:href="#icon-arrow" />
                         </svg>
@@ -182,9 +175,17 @@
                         </svg>
                     </a>
                 </li>
+                 <li v-bind:class="{ 'subnavbar__li--active': isOverTransferActive }" class="subnavbar__li">
+                    <a v-bind:class="{ 'subnavbar__item--tactive': isOverTransferActive }" v-on:click="openOverMenus('transfer', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/international-money-transfer.html">
+                        Company
+                        <svg v-bind:class="{ 'subnavbar__arrow--tactive': isOverTransferActive }" class="arrow subnavbar__arrow">
+                            <use xlink:href="#icon-arrow" />
+                        </svg>
+                    </a>
+                </li>
                 <li v-bind:class="{ 'subnavbar__li--active': isOverHelpActive }" class="subnavbar__li subnavbar__li--last">
                     <a v-bind:class="{ 'subnavbar__item--tactive': isOverHelpActive }" v-on:click="openOverMenus('help', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="https://support.elektropay.com/hc/en-gb">
-                        Help
+                        Resources
                         <svg v-bind:class="{ 'subnavbar__arrow--tactive': isOverHelpActive }" class="arrow subnavbar__arrow">
                             <use xlink:href="#icon-arrow" />
                         </svg>
