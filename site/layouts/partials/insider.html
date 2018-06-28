@@ -1,0 +1,18 @@
+<div class="insider">
+		<div class="container insider__container">
+			<div class="insider__row row">
+				<div class="insider__col">
+					<h2 class="h2 insider__h2">Get access to our latest features, offers &amp; thrifty tips</h2>
+				</div>
+			</div>
+			<div class="row insider__row">
+				<div class="insider__col">
+					<form v-on:submit.prevent="onSubmit" class="insider__form" action="index.html" method="post">
+						<input v-on:keyup="checkError" v-model="email" v-bind:class="{ 'insider__input--error': isError }" type="email" name="email" class="insider__input insider__input--email" placeholder="Enter your email address" required>
+						<input v-model="submit" v-bind:class="{ 'insider__submit--submitting': isSubmitting }" type="submit" data-default="Sign up" data-submitting="Signing up..." data-submitted="Signed up!" value="" class="btn insider__submit">
+					</form>
+					<p v-bind:class="{ 'insider__message--error': isError, 'insider__message--success': isSuccess }" class="insider__message" data-default="Monese will not share your data with third parties." data-error="Please enter a valid email." data-retry="There was an error please try again." data-success="Great! Now check your inbox.">${message}</p>
+				</div>
+			</div>
+		</div>
+	</div>
