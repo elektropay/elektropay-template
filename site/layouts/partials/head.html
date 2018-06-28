@@ -113,6 +113,29 @@ background-color: #6b8cce!important
     color: #444!important;
 }
 	
+.overmenu--company {
+    width: 320px!important;
+    top: 80px;
+    right: auto;
+    left: 72%;
+    margin-left: -480px;
+    padding: 0 20px;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0s;
+    transition: opacity 0s;
+    height: 255px;
+}	
+
+.overmenu--active {
+    -webkit-transition: opacity 0s;
+    transition: opacity 0s;
+    opacity: 1;
+    pointer-events: auto;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+	
 .navbar__highlight {
     display: block;
     position: fixed;
