@@ -1,6 +1,6 @@
 +++
 title = "Payments"
-type = "features"
+type = "payments"
 parent= "features"
 page="/payments.html"
 +++
