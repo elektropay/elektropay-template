@@ -63,7 +63,7 @@
 
 <style>
 .navbar {
-background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+background-color: #0c3483;
 }
 
 header--one {
@@ -78,8 +78,21 @@ background-color: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%
     color: #ffffff;
 }
 
+.subnavbar__item a {
+    color: #ffffff;
+}
+
 .subnavbar__item {
     color: #ffffff;
+}
+	
+.subnavbar__item--tactive {
+    color: #eeeeee;
+    opacity: 1;
+}
+	
+.subnavbar__item--tactive:hover {
+    color: #28dc8e;
 }
 	
 .subnavbar__arrow {
@@ -87,6 +100,8 @@ background-color: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%
     -webkit-transition: stroke .5s;
     transition: stroke .5s;
 }
+	
+	
 	
 .overmenu__item {
     width: 300px;
