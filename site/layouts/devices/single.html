@@ -1,0 +1,567 @@
+{{ partial "head" . }}
+
+{{ partial "nav" . }}
+
+<div class="ncontainer">
+        
+    
+<div class="main-header main-header--one-1 main-header--pricing">
+    	<div class="container main-header__container">
+	        <h1 class="h1 main-header__h1 main-header__h1--three main-header__h1--pricing dont-break-out">Supporting All Devices - plug and pay.</h1>
+		<a class="main-header__btn main-header__btn--pricing btn btn--one main-header__btn--tablet" href="/free-trial-account.html">
+			        	Try account free
+			    	</a>
+<img class="p main-header__img" src="https://static.monese.com/img/pricing-screen-sm_171019_215025.png?mtime=20171019215026">
+		         <a class="main-header__btn main-header__btn--pricing btn btn--one main-header__btn--mobile" href="/free-trial-account.html">
+			        	Try account free
+			    	</a>
+		    		    	
+	    	       </div>
+    </div>
+      <script>
+            window.MONT_FREE = 'FREE';
+            window.MONT_CARD_PRICE = 'one off cost (optional)';
+            window.MONT_OPTIONAL = 'optional';
+            window.MONT_ONE_TIME_OPTIONAL = 'one-time fee, optional';
+            window.MONT_EACH = 'each';
+            window.MONT_FEE = 'fee';
+            window.MONT_MINIMUM = 'minimum';
+            window.MONT_NO_MONTHLY_FEE = 'No monthly fee';
+            window.MONT_PER_MONTH = '/month';
+            window.MONTHLY = 'monthly';
+        </script>
+        
+   <div v-bind:class="{ 'pricing-plans--active': isActive }" class="pricing-plans pricing-plans--nopadding clearfix" style="opacity: 9;">
+            <div class="pricing-plans__intro">
+                <div class="container">
+                    <div class="row pricing-plans__row pricing-plans__row">
+                        <div class="pricing-plans__col">
+                            <h2 class="pricing-plans__h2">Our pricing</h2>
+                            <p>You can use Monese instead of a traditional bank account to receive your wages, benefits or pension and you may even save money as we are up to 5x cheaper* than highstreet banks. Choose a pricing option based on the features you want from the plans below:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ <div class="pricing-plans__plans">
+                <div class="pricing-plans__box pricing-plans__box--eu">
+                    <svg class="pricing-plans__icon">
+                        <use xlink:href="#icon-easybanking" />
+                    </svg>
+
+                    <h3 class="pricing-plans__h3 pricing-plans__h3--eu">Plus</h3>
+                    <p class="pricing-plans__price pricing-plans__price--eu">${ paidMonthlyFee }</p>
+
+                    <ul class="pricing-plans__ul">
+                                <li class="pricing-plans__li pricing-plans__li--eu">
+                                <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                    UK current account
+                                <br>
+                                <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                    FREE
+                                </span>
+                            </li>
+                        
+                        
+             <li class="pricing-plans__li pricing-plans__li--eu">
+                                <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                    Direct Debits
+                                <br>
+                                <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                    ${ paidDirectDebits }
+                                </span>
+                                <span class="pricing-plans__description">
+                                    ${ paidDirectDebitsDescription }
+                                </span>
+                            </li>
+                        
+                        <li class="pricing-plans__li pricing-plans__li--eu">
+                            <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                Contactless debit card
+                            <br>
+                            <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                ${ paidCardFee }
+                            </span>
+                            <span class="pricing-plans__description">
+                                ${ paidCardFeeDescription }
+                            </span>
+                        </li>
+                        <li class="pricing-plans__li pricing-plans__li--eu">
+                            <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                ATM cash withdrawals
+                            <br>
+                            <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                ${ paidAtmFreeWithdrawals }
+                            </span>
+                            <span class="pricing-plans__description">
+                                ${ paidAtmFreeWithdrawalsDescription }
+                            </span>
+                        </li>
+                        <li class="pricing-plans__li pricing-plans__li--eu">
+                            <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                Foreign currency exchange
+                            <br>
+                            <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                ${ paidFxFeeMinium }
+                            </span>
+                            <span class="pricing-plans__description">
+                                ${ paidFxFeeMiniumDescription }
+                            </span>
+                        </li>
+                        
+                    </ul>
+
+                    <a class="pricing-plans__btn btn btn--transparent btn--full" href="/download-now?bcp=paid">
+                        Open account
+                    </a>
+                </div>
+            </div> 
+
+            <div class="pricing-plans__plans">
+                <div class="pricing-plans__box pricing-plans__box--gb">
+                    <svg class="pricing-plans__icon">
+                        <use xlink:href="#icon-payasyougo" />
+                    </svg>
+
+                    <h3 class="pricing-plans__h3 pricing-plans__h3--gb">Starter</h3>
+                    <p class="pricing-plans__price pricing-plans__price--gb">${ freeMonthlyFee }</p>
+
+                    <ul class="pricing-plans__ul">    
+                                                    <li class="pricing-plans__li">
+                                <i class="pricing-plans__tick"></i>
+                                    UK current account
+                                <br>
+                                <span class="pricing-plans__listprice">
+                                    FREE
+                                </span>
+                            </li>
+                        
+                        
+                                                    <li class="pricing-plans__li pricing-plans__li--gb">
+                                <i class="pricing-plans__tick pricing-plans__tick--gb"></i>
+                                    Direct Debits
+                                <br>
+                                <span class="pricing-plans__listprice pricing-plans__listprice--gb">
+                                    ${ freeDirectDebits }
+                                </span>
+                                <span class="pricing-plans__description">
+                                    ${ freeDirectDebitsDescription }
+                                </span>
+                            </li>
+                        
+                        <li class="pricing-plans__li pricing-plans__li--gb">
+                            <i class="pricing-plans__tick pricing-plans__tick--gb"></i>
+                                Contactless debit card
+                            <br>
+                            <span class="pricing-plans__listprice pricing-plans__listprice--gb">
+                                ${ freeCardFee }
+                            </span>
+                            <span class="pricing-plans__description">
+                                ${ freeCardFeeDescription }
+                            </span>
+                        </li>
+                        <li class="pricing-plans__li pricing-plans__li--gb">
+                            <i class="pricing-plans__tick pricing-plans__tick--gb"></i>
+                                ATM cash withdrawals
+                            <br>
+                            <span class="pricing-plans__listprice pricing-plans__listprice--gb">
+                                ${ freeAtmFreeWithdrawals }
+                            </span>
+                            <span class="pricing-plans__description">
+                                ${ freeAtmFreeWithdrawalsDescription }
+                            </span>
+                        </li>
+                        <li class="pricing-plans__li pricing-plans__li--gb">
+                            <i class="pricing-plans__tick pricing-plans__tick--gb"></i>
+                                Foreign currency exchange
+                            <br>
+                            <span class="pricing-plans__listprice pricing-plans__listprice--gb">
+                                ${ freeFxFeeMinium }
+                            </span>
+                            <span class="pricing-plans__description">
+                                ${ freeFxFeeMiniumDescription }
+                            </span>
+                        </li>
+                    </ul>
+
+                    <a class="pricing-plans__btn btn btn--transparent btn--full" href="/download-now?bcp=free">
+                        Open account
+                    </a>
+                </div>
+            </div>
+
+            <div class="pricing-plans__plans">
+                <div class="pricing-plans__box pricing-plans__box--eu">
+                    <svg class="pricing-plans__icon">
+                        <use xlink:href="#icon-easybanking" />
+                    </svg>
+
+                    <h3 class="pricing-plans__h3 pricing-plans__h3--eu">Plus</h3>
+                    <p class="pricing-plans__price pricing-plans__price--eu">${ paidMonthlyFee }</p>
+
+                    <ul class="pricing-plans__ul">
+                                <li class="pricing-plans__li pricing-plans__li--eu">
+                                <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                    UK current account
+                                <br>
+                                <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                    FREE
+                                </span>
+                            </li>
+                        
+                        
+             <li class="pricing-plans__li pricing-plans__li--eu">
+                                <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                    Direct Debits
+                                <br>
+                                <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                    ${ paidDirectDebits }
+                                </span>
+                                <span class="pricing-plans__description">
+                                    ${ paidDirectDebitsDescription }
+                                </span>
+                            </li>
+                        
+                        <li class="pricing-plans__li pricing-plans__li--eu">
+                            <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                Contactless debit card
+                            <br>
+                            <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                ${ paidCardFee }
+                            </span>
+                            <span class="pricing-plans__description">
+                                ${ paidCardFeeDescription }
+                            </span>
+                        </li>
+                        <li class="pricing-plans__li pricing-plans__li--eu">
+                            <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                ATM cash withdrawals
+                            <br>
+                            <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                ${ paidAtmFreeWithdrawals }
+                            </span>
+                            <span class="pricing-plans__description">
+                                ${ paidAtmFreeWithdrawalsDescription }
+                            </span>
+                        </li>
+                        <li class="pricing-plans__li pricing-plans__li--eu">
+                            <i class="pricing-plans__tick pricing-plans__tick--eu"></i>
+                                Foreign currency exchange
+                            <br>
+                            <span class="pricing-plans__listprice pricing-plans__listprice--eu">
+                                ${ paidFxFeeMinium }
+                            </span>
+                            <span class="pricing-plans__description">
+                                ${ paidFxFeeMiniumDescription }
+                            </span>
+                        </li>
+                        
+                    </ul>
+
+                    <a class="pricing-plans__btn btn btn--transparent btn--full" href="/download-now?bcp=paid">
+                        Open account
+                    </a>
+                </div>
+            </div> 
+
+        </div>
+        
+        
+        
+        
+<div class="global-pricing">
+            <div class="container global-pricing__container">
+                <div class="row global-pricing__row">
+                    <div class="global-pricing__col">
+                        <h2 class="h3 global-pricing__h2">*</h2>
+                        <h3 class="h2 global-pricing__h3"></h3>
+                        <p class="p global-pricing__p">* Monese can be up to 5 times cheaper than a traditional bank based on a comparison of the Tariffs of Retail Banking in Thirteen Countries by Van Dijk Management Consultants, 2013 and Monese’s analysis of the cost of account ownership across the top 5 banks in the UK with a combined market share of 85%.</p>
+                        <p class="p global-pricing__p"></p>
+                        <p class="p global-pricing__p global-pricing__p--bold"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+	
+    <div class="reviews">
+        <div class="container reviews__container">
+            <div class="row reviews__row reviews__row--intro">
+                <div class="reviews__col">
+                                            <h2 class="h2 reviews__h2">5 star rated by our customers</h2>
+                                        <svg class="reviews__icon">
+                        <use xlink:href="#icon-trustpilot" />
+                    </svg>
+                    <ul class="reviews__ratings">
+                        <li class="reviews__star">
+                            <svg class="reviews__staricon">
+                                <use xlink:href="#icon-truststar" />
+                            </svg>
+                        </li>
+                        <li class="reviews__star">
+                            <svg class="reviews__staricon">
+                                <use xlink:href="#icon-truststar" />
+                            </svg>
+                        </li>
+                        <li class="reviews__star">
+                            <svg class="reviews__staricon">
+                                <use xlink:href="#icon-truststar" />
+                            </svg>
+                        </li>
+                        <li class="reviews__star">
+                            <svg class="reviews__staricon">
+                                <use xlink:href="#icon-truststar" />
+                            </svg>
+                        </li>
+                        <li class="reviews__star">
+                            <svg class="reviews__staricon">
+                                <use xlink:href="#icon-truststar" />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row reviews__row">
+                <div class="reviews__col">
+                    <div class="reviews__carousel">
+                        <ul class="reviews__ul">
+                            
+                            <li class="reviews__li  ">
+                                <h3 class="reviews__h3"><a class="reviews__atrust" href="https://www.trustpilot.com/reviews/5a8c9352d27b0a0520745dd4" target="_blank">Very good service</a></h3>
+                                <ul class="reviews__ratings">
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__star reviews__star--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <p class="reviews__review">
+                                     
+
+                                                                            Very good service, everything I’m looking for
+                                                                    </p>
+                                <div class="reviews__meta">
+                                    <p class="reviews__name">customer </p>
+                                    <p class="reviews__date">20 feb</p>
+                                </div>
+                            </li>
+
+                            
+                            <li class="reviews__li  ">
+                                <h3 class="reviews__h3"><a class="reviews__atrust" href="https://www.trustpilot.com/reviews/5a8c5a4ed27b0a0594cf44e2" target="_blank">Excellent</a></h3>
+                                <ul class="reviews__ratings">
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__star reviews__star--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <p class="reviews__review">
+                                     
+
+                                     
+                                                                                    Excellent! 
+                                                                                    I 
+                                                                                    love 
+                                                                                    it 
+                                                                                    :) 
+                                                                                    it 
+                                                                                    should 
+                                                                                    be 
+                                                                                    the 
+                                                                                    new 
+                                                                                    way 
+                                                                                    of 
+                                                                                    the 
+                                                                                    banking. 
+                                                                                ...
+                                                                    </p>
+                                <div class="reviews__meta">
+                                    <p class="reviews__name">Adrienn  </p>
+                                    <p class="reviews__date">20 feb</p>
+                                </div>
+                            </li>
+
+                            
+                            <li class="reviews__li reviews__li--mobile reviews__li--last ">
+                                <h3 class="reviews__h3"><a class="reviews__atrust" href="https://www.trustpilot.com/reviews/5a8c3c45d27b0a0594cf3a12" target="_blank">Good stuff</a></h3>
+                                <ul class="reviews__ratings">
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__star reviews__star--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <p class="reviews__review">
+                                     
+
+                                     
+                                                                                    Good 
+                                                                                    stuff, 
+                                                                                    saved 
+                                                                                    me 
+                                                                                    a 
+                                                                                    lot
+I 
+                                                                                    didn&#039;t 
+                                                                                    have 
+                                                                                    a 
+                                                                                    bank 
+                                                                                    account. 
+                                                                                    Now 
+                                                                                    it&#039;s 
+                                                                                    all 
+                                                                                    good 
+                                                                                ...
+                                                                    </p>
+                                <div class="reviews__meta">
+                                    <p class="reviews__name">Marcus  </p>
+                                    <p class="reviews__date">20 feb</p>
+                                </div>
+                            </li>
+
+                            
+                            <li class="reviews__li  reviews__li--mobile reviews__li--desktop">
+                                <h3 class="reviews__h3"><a class="reviews__atrust" href="https://www.trustpilot.com/reviews/5a8c1e36d27b0a0594cf2ed5" target="_blank">Painless Transactions</a></h3>
+                                <ul class="reviews__ratings">
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__star reviews__star--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                    <li class="reviews__star reviews__star--big">
+                                        <svg class="reviews__staricon reviews__staricon--big">
+                                            <use xlink:href="#icon-truststar" />
+                                        </svg>
+                                    </li>
+                                </ul>
+                                <p class="reviews__review">
+                                     
+
+                                     
+                                                                                    Does 
+                                                                                    exactly 
+                                                                                    what 
+                                                                                    it 
+                                                                                    says. 
+                                                                                    Hassle 
+                                                                                    free 
+                                                                                    withdraws 
+                                                                                    and 
+                                                                                    transactions. 
+                                                                                    Always 
+                                                                                    updated 
+                                                                                    for 
+                                                                                    every 
+                                                                                    step, 
+                                                                                    even 
+                                                                                    the 
+                                                                                    failed 
+                                                                                    ones. 
+                                                                                ...
+                                                                    </p>
+                                <div class="reviews__meta">
+                                    <p class="reviews__name">customer </p>
+                                    <p class="reviews__date">20 feb</p>
+                                </div>
+                            </li>
+
+                                                    
+                        </ul>
+                    </div>
+
+                        <h4 class="reviews__h4">Rated excellent</h4>
+                        <a class="reviews__a" href="https://www.trustpilot.com/review/www.monese.com">2170 reviews
+                            <svg class="reviews__arrow">
+                                <use xlink:href="#icon-arrowlong" />
+                            </svg>
+                        </a>
+                                    </div>
+            </div>
+        </div>
+    </div>        
+        
+        
+        
+  
+{{ partial "insider" . }}     
+ 
+{{ partial "sitemap" . }}      
+        
+{{ partial "footer" . }}
