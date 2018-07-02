@@ -2,5 +2,6 @@
 title = "Devices"
 type = "devices"
 parent= "features"
-page="/devices.html"
+section= "features"
+page="/features/devices.html"
 +++
