@@ -1,55 +1,31 @@
-<section class="section-hero main-header--one-1">
-<div class="ptl sub-section hero">
-<div class="container row adaptive">
-<div class="col1of2 mobile-centered">
-<div class="hidden-phone pbl"></div>
-<h1 class="pvm plm">{{.title}}</h1>
-
-  <div class="mobile-off">
-<form novalidate="novalidate" class="pill-form mts" action="https://app.elektropay.com/user/signup" accept-charset="UTF-8" method="post">
-  <input name="utf8" type="hidden" value="✓">
-  <input type="hidden" name="authenticity_token" value="xIjd2P7O4ZTqq8hztZjH60INAsBDjzRnO5DKK+ouRHCn0SHXtmSH9r28foX33MG6wd/ZgxI3/gOBOOYl8Wbf5Q==">
-<input type="hidden" name="section" id="section" value="hero">
-<input name="email" placeholder="Enter your email" type="email">
-<input type="submit" value="Sign Up">
-</form>
-    
-{{ if .subtitle }}
-<p class="text-center pvs">{{ .subtitle }}</p>
-{{ end }}      
-</div>
-  
-<div class="desktop-off">
-<div class="pbs">
-<a class="button" data-section="hero" href="signup">Get Started For Free</a>
-</div>
+<div class="main-header main-header--white main-header--lander">
+    	<div class="container main-header__container">
+	        <h1 class="h1 main-header__h1 main-header__h1--three main-header__h1--home dont-break-out">{{.title}}<span class="main-header__span"> {{.title2}} </span></h1>
+                {{ if .subtitle }}
+ <p class="p main-header__p ">{{ .subtitle }}</p>
+                   {{ end }} 
+	        <a class="main-header__btn main-header__btn--home btn btn--one main-header__btn--tablet" href="/free-trial-account.html">
+			   			Get Started For Free
+			    	</a>
+<img class="p main-header__img" src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497508051/elektropay/assets/img/landing/processor.png">
+<a class="main-header__btn main-header__btn--home btn btn--one main-header__btn--mobile" href="/free-trial-account.html">
+			Get Started For Free
+  	</a>
 <small>No credit card required.</small>
-</div>
-
-</div>
-<div class="col1of2 hidden-phone">
-<img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497508051/elektropay/assets/img/landing/processor.png" alt="Elektropay" width="480" height="400">
-</div>
-</div>
-</div>
-  </section>
-
-
-<div class="pv5 pv6-l ph3 bg-center cover hidden" style="background-image: url('{{.imageUrl}}')">
-  <div class="mw7 center ph3">
-    <div class="db mb3">
-      <div class="mw7 relative bg-fix-primary mb3">
-        <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-          {{.title}}
-        </h1>
-      </div>
-      <div class="mw7 relative bg-fix-primary">
-        {{ if .subtitle }}
-        <p class="b f4 di lh-title mb3 white mw6 bg-primary">
-          {{.subtitle}}
-        </p>
-        {{ end }}
-      </div>
+			    
+		    		    	
+	    		      	<div class="main-header__ctas main-header__ctas--home">
+		        <a onclick="return monInstallLinkTrack('iOs', 'Header');" href="https://itunes.apple.com/gb/app/elektropay/id1102793407">
+			        <svg class="app-install main-header__install main-header__install--home main-header__install--first">
+			            <use xlink:href="#icon-app-store"></use>
+			        </svg>
+		        </a>
+		        <a onclick="return monInstallLinkTrack('Android', 'Header');" href="https://play.google.com/store/apps/details?id=com.elektropay.elektropay.live&amp;hl=en_GB&amp;referrer=">
+		        	<svg class="app-install main-header__install main-header__install--home">
+		            	<use xlink:href="#icon-googleplay"></use>
+		        	</svg>
+		        </a>
+	      	</div>
+	      	       </div>
     </div>
-  </div>
-</div>
+
