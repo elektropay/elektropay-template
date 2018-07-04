@@ -23,18 +23,8 @@
 					<h2 class="h2 insider__h2">Get access to our latest features, offers &amp; thrifty tips</h2>
 				</div>
 			</div>
-			<div class="row insider__row">
-				<div class="insider__col">
-					<form v-on:submit.prevent="onSubmit" class="insider__form" action="/" method="post">
-						<input v-on:keyup="checkError" v-model="email" v-bind:class="{ 'insider__input--error': isError }" type="email" name="email" class="insider__input insider__input--email" placeholder="Enter your email address" required>
-						<input v-model="submit" v-bind:class="{ 'insider__submit--submitting': isSubmitting }" type="submit" data-default="Sign up" data-submitting="Signing up..." data-submitted="Signed up!" value="" class="btn insider__submit">
-
-            <p v-bind:class="{ 'insider__message--error': isError, 'insider__message--success': isSuccess }" class="insider__message" data-default="" data-error="Please enter a valid email." data-retry="There was an error please try again." data-success="Great! Now check your inbox.">${message}</p>
-
-            <p class="insider__gdpr"><input type="checkbox" class="insider__checkbox" name="terms" required> You can unsubscribe at any time by clicking the unsubscribe link in the footer of any email you receive from us, or by contacting us at <a class="insider__a" href="mailto:info@monese.com">info@monese.com</a>. By clicking this tick-box, you agree that we may process your information in accordance with the terms of our <a class="insider__a" href="/privacy">privacy policy</a></p>
-					</form>
-				</div>
-			</div>
+			
+			
 		</div>
 	</div>
 
