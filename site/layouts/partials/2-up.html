@@ -1,4 +1,32 @@
-<div class="bg-off-white pv4">
+<div class="copy-image copy-image--nopadding ">
+                
+                <video class="scrollvideo copy-image__img copy-image__img--video" width="320" height="240">
+                  <source src="https://static.monese.com/img/uk-card.mp4?mtime=20171019170234" type="video/mp4" />
+                  <source src="https://static.monese.com/img/uk-card.ogv?mtime=20171019170233" type="video/ogg" />
+                  <source src="https://static.monese.com/img/uk-card.webm?mtime=20171019170233" type="video/webm" />
+                </video>
+
+                <img class="copy-image__img copy-image__img--hasvideo" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2716%27%20height%3D%279%27%20style%3D%27background%3Atransparent%27%2F%3E" sizes="100vw" srcset="https://static.monese.com/i/6c17a0d2aaa884b4f3c2b8f3d7a0682b/monese-mastercard-2-ss_171020_015020_b64fc767d3d7ca9c1fd51325928a0f0e.jpg 1024w, https://static.monese.com/i/6c17a0d2aaa884b4f3c2b8f3d7a0682b/monese-mastercard-2-ss_171020_015020_62a3c087a87ec9c8ef005515c44c4949.jpg 512w, https://static.monese.com/i/6c17a0d2aaa884b4f3c2b8f3d7a0682b/monese-mastercard-2-ss_171020_015020_060e012c8487784e655524c9661b5008.jpg 256w" alt="The monese card">
+                <div class="container">
+                    <div class="copy-image__row row">
+                        <div class="copy-image__col">
+                            <h2 class="copy-image__h2">{{.heading}}</h2>
+                            <h3 class="h2 copy-image__h3">{{.description}}</h3>
+                            <p class="copy-image__copy">{{.text1}}</p>
+                           {{ if .buttonText }}
+                            <a class="copy-image__btn btn btn--transparent btn--full" href="{{.buttonLink}}">
+                                {{.buttonText}}
+                                <svg class="btn__arrow arrow btn__arrow--one">
+                                    <use xlink:href="#icon-arrow" />
+                                </svg>
+                            </a>
+                          {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<div class="bg-off-white pv4 hidden">
   <div class="ph3 mw7 center">
     <h2 class="f2 b lh-title mb2">{{.heading}}</h2>
     <p class="mb4 mw6">{{.description}}</p>
