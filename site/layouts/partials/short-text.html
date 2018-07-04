@@ -1,6 +1,38 @@
-<div class="bg-grey-1 pv4">
-  <div class="flex-l mhn1-l ph3 center mw7">
-    <h2 class="f2 b lh-title mb2 w-40-l">{{.heading}}</h2>
-    <p class="w-60-l mb0">{{.text}}</p>
-  </div>
+    <div class="selling-points selling-points--none">
+        <div class="container">
+          
+        <h2 class="h2 reviews__h2">{{.heading}}</h2>
+     <h4 class="reviews__h4">{{.text}}</h4>
+
+            <div class="selling-points__row row selling-points__row--none">
+                <div v-bind:class="{ 'selling-points__col--active': checkIsActive(0) }" class="selling-points__col selling-points__col--one">
+                    <svg class="selling-points__icon">
+                        <use xlink:href="#icon-sellpassport" />
+                    </svg>
+                    <h3 class="h2 selling-points__h3">For mobile people</h3>
+                    <p class="selling-points__p">Our app lets you open a UK current account instantly, without a UK address.</p>
+                </div>
+                <div v-bind:class="{ 'selling-points__col--active': checkIsActive(1) }" class="selling-points__col selling-points__col--two">
+                    <svg class="selling-points__icon selling-points__icon--right">
+                        <use xlink:href="#icon-sellall" />
+                    </svg>
+                    <h3 class="h2 selling-points__h3">All in one</h3>
+                    <p class="selling-points__p">Use Monese as your main account. Receive and make payments, set up direct debits, shop online and in person - all with one account.</p>
+                </div>
+                <div v-bind:class="{ 'selling-points__col--active': checkIsActive(2) }" class="selling-points__col selling-points__col--three">
+                    <svg class="selling-points__icon">
+                        <use xlink:href="#icon-sellshield" />
+                    </svg>
+                    <h3 class="h2 selling-points__h3">FCA registered</h3>
+                    <p class="selling-points__p">100% secure and fully registered with the UK Financial Conduct Authority.</p>
+                </div>
+            </div>
+        </div>
+    </div>        
+        
+        
+<div class="video"> 
+<div data-type="youtube" data-video-id="CiNXA_5wrgc"></div>
 </div>
+
+
