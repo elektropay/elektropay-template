@@ -10180,7 +10180,7 @@ sub {
     position: relative;
     border-radius: 8px;
     text-align: center;
-    padding: 50px;
+    padding: 55px;
     background-color: #fff;
     opacity: 0;
     transition: opacity .5s ease-in-out;
@@ -10189,17 +10189,17 @@ sub {
 
 @media screen and (min-width:768px) {
     .signup__box {
-        min-height: 13.125em;
-        width: 422px;
+        min-height: 23.125em;
+        width: 420px;
         margin: 0 auto;
         text-align: left;
-        padding: 1.5625em 30px 1.25em
+        padding: 55px
     }
 }
 
 @media screen and (min-width:992px) {
     .signup__box {
-        width: 427px
+        width: 440px
     }
 }
 
@@ -10222,7 +10222,7 @@ sub {
 
 @media screen and (min-width:768px) {
     .signup__box--completed {
-        width: 560px;
+        width: 420px;
         min-height: 11.25em
     }
 }
@@ -10440,6 +10440,16 @@ sub {
     font-size: 1.5em;
     display: block;
     width: 170px;
+    margin: 0 auto;
+    margin-bottom: .625em
+}
+
+.signup__h3 {
+    color: #28dc8e;
+    font-size: 1.15em;
+    text-direction: center;
+    display: block;
+    width: 280px;
     margin: 0 auto;
     margin-bottom: .625em
 }
@@ -10693,13 +10703,13 @@ sub {
 
 ..panel-footer {
     display: block;
-    font-size: 17px;
+    font-size: 16px;
     color: #878797;
     font-weight: 100;
 }
 .panel-footer {
     padding: 10px 15px;
-    background-color: #f5f5f5;
+    background-color: #fefefe;
     border-top: 1px solid #ddd;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
