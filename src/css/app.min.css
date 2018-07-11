@@ -10447,7 +10447,7 @@ sub {
 .signup__h3 {
     color: #28dc8e;
     font-size: 1.15em;
-    text-direction: center;
+    text-align: center;
     display: block;
     width: 280px;
     margin: 0 auto;
@@ -10701,8 +10701,9 @@ sub {
     text-decoration: none;
 }
 
-..panel-footer {
+.panel-footer {
     display: block;
+    text-align: center;
     font-size: 16px;
     color: #878797;
     font-weight: 100;
