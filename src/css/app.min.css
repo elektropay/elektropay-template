@@ -10199,6 +10199,7 @@ sub {
 
 @media screen and (min-width:992px) {
     .signup__box {
+        padding: 35px 55px 15px 55px;
         width: 420px
     }
 }
@@ -10435,7 +10436,7 @@ sub {
     margin-top: 1px
 }
 
-.signup__h2 {
+.signup__box--h2 {
     color: #28dc8e;
     font-size: 1.5em;
     display: block;
@@ -10444,7 +10445,7 @@ sub {
     margin-bottom: .625em
 }
 
-.signup__h3 {
+.signup__box--h3 {
     color: #28dc8e;
     font-size: 1.75em;
     font-weight: 100;
