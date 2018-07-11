@@ -10190,7 +10190,7 @@ sub {
 @media screen and (min-width:768px) {
     .signup__box {
         min-height: 23.125em;
-        width: 420px;
+        width: 400px;
         margin: 0 auto;
         text-align: left;
         padding: 35px 55px 15px 55px
@@ -10200,7 +10200,7 @@ sub {
 @media screen and (min-width:992px) {
     .signup__box {
         padding: 35px 55px 15px 55px;
-        width: 420px
+        width: 400px
     }
 }
 
